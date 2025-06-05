@@ -1,0 +1,3 @@
+const SPREADSHEET_ID = "1oxKXMzZGuXIJ_Y8uES3uLhdNk4E9DvwsTiozjWCAkz4";
+
+export { SPREADSHEET_ID };
