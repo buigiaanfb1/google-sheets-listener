@@ -1,8 +1,7 @@
 import { GoogleSpreadsheet } from "google-spreadsheet";
 import serviceAccountAuth from "../auth/serviceAccountAuth";
-import { SPREADSHEET_ID } from "../utils/constants";
 
-const doc = new GoogleSpreadsheet(SPREADSHEET_ID, serviceAccountAuth);
+const doc = new GoogleSpreadsheet(process.env.SPREADSHEET_ID, serviceAccountAuth);
 
 
 const permissions = await doc.listPermissions();
